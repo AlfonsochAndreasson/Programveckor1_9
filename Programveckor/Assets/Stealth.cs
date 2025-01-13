@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Stealth : MonoBehaviour
 {
-    public PlayerMovement playerScript;
+    public Status playerScript;
 
    public bool isHiding = false;
     bool isNear = false;
@@ -22,9 +22,9 @@ public class Stealth : MonoBehaviour
             playerScript.isplayerHiding = true;
             
         }
-        if (playerScript.isplayerHiding == true && Input.GetKeyDown(KeyCode.E))
+        if ( isNear == true && Input.GetKeyDown(KeyCode.E))
         {
-            isHiding = false;
+            playerScript.isplayerHiding = false;
         }
 
     }

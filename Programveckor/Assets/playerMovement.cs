@@ -3,7 +3,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-    public bool isplayerHiding;
+    
+    
 
     private float horizontal;
     private float speed = 8f;
