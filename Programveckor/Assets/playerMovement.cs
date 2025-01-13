@@ -3,11 +3,12 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-    public bool isplayerHiding;
+    
+    
 
     private float horizontal;
-    private float speed = 8f;
-    private float jumpingPower = 10f;
+    private float speed = 4f;
+    private float jumpingPower = 8f;
     private bool isFacingRight = true;
 
     [SerializeField] private Rigidbody2D rb;
@@ -29,6 +30,16 @@ public class PlayerMovement : MonoBehaviour
         }
 
         Flip();
+
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            speed = 7f;
+
+        }
+        else
+        {
+            speed = 4f;
+        }
     }
 
     private void FixedUpdate()

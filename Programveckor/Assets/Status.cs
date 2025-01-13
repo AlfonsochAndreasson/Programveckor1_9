@@ -2,23 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class testing : MonoBehaviour
+public class Status : MonoBehaviour
 {
-    public Stealth stealthScript;
-    
+
+    public bool isplayerHiding;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        isplayerHiding = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if( stealthScript.isHiding == true)
-        {
-            print("brainrot");
-        }
+        
     }
 }
