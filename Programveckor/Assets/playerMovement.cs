@@ -1,4 +1,5 @@
 using UnityEngine;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -10,6 +11,10 @@ public class PlayerMovement : MonoBehaviour
     private float speed = 4f;
     private float jumpingPower = 8f;
     private bool isFacingRight = true;
+
+    public bool isRunning = false;
+    
+
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
@@ -31,10 +36,11 @@ public class PlayerMovement : MonoBehaviour
 
         Flip();
 
-        if (Input.GetKey(KeyCode.LeftShift))
+
+        if (Input.GetKey(KeyCode.LeftShift) )
         {
             speed = 7f;
-
+            isRunning = true;
         }
         else
         {
@@ -62,4 +68,5 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = localScale;
         }
     }
+    
 }
