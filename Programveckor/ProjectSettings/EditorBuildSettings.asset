@@ -12,10 +12,10 @@ EditorBuildSettings:
     path: Assets/Scenes/die.unity
     guid: 405a6250aa4ffed4aba6225f7843d943
   - enabled: 1
-    path: Assets/Gameover.unity
+    path: Assets/Scenes/Gameover.unity
     guid: 521f93e900bd03b4eb695e7faf2bd31a
   - enabled: 1
-    path: Assets/Gamestart.unity
+    path: Assets/Scenes/Gamestart.unity
     guid: 82d147b7fdd28354bb6767da652446da
   - enabled: 1
     path: Assets/Scenes/YesScene.unity
