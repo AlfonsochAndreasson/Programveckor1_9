@@ -15,6 +15,7 @@ public class Dialogue : MonoBehaviour
     public string line3;
     public string line4;
 
+
     int lineNumber = 1;
 
     // Start is called before the first frame update
